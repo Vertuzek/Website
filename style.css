@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: Poppins;
+}
+
+.full-width {
+    width: 100%;
+    justify-content: space-between;
+}
+.navbar-nav {
+    flex-direction: row;
+}
+.navbar-toggler {
+    margin-left: auto;
+}
+
+.bg-darker{
+    background-color: #181a1d;
+}
+
+.gallery-container {
+    max-height: 20rem;
+    overflow: hidden;
+    position: relative;
+    transition: max-height 0.5s ease;
+    background-color: #212529;
+}
+
+.gallery-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5rem;
+    background: linear-gradient(to bottom, rgba(33,37,41,0), rgba(33,37,41,1));
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+}
+
+.gallery-container.expanded {
+    max-height: none;
+}
+
+.gallery-container.expanded::after {
+    opacity: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #212529;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.col, .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-item {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 575.98px) {
+    .gallery-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .gallery-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .gallery-item {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+@media (min-width: 992px) {
+    .gallery-item {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+.custom-textarea {
+    background-color: #181a1d !important; /* Dark background color */
+    color: #ffffff !important; /* Light text color */
+    border: 1px solid #2c3034 !important; /* Dark border color */
+    resize: none;
+}
+
+.custom-textarea:focus {
+    background-color: #181a1d !important;
+    color: #ffffff !important;
+    border-color: #0d6efd !important; /* Bootstrap primary color for focus */
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25) !important; /* Bootstrap focus shadow */
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Capybara Lovers</title>
+        <link href="src/css/bootstrap.css" rel="stylesheet" />
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light p-2">
+                <div class="container-fluid full-width justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <a href="https://facebook.com/Vertuzek" class="text-decoration-none text-light" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-facebook px-1" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                            </svg>
+                        </a>
+                        <a href="https://discord.gg/Y9gTZMZ" class="text-decoration-none text-light" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-discord px-1" viewBox="0 0 16 16">
+                                <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612" />
+                            </svg>
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="d-flex">
+                        <div class="collapse navbar-collapse">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <mainc class="bg-dark">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="src/images/capy1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="src/images/capy2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="src/images/capy3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="container-fluid text-light">
+                <div class="row bg-dark">
+                    <div class="col-12">
+                        <h1 class="text-center">Capybara Lovers</h1>
+                    </div>
+                </div>
+                <div class="row bg-dark">
+                    <div class="col-12">
+                        <p class="text-center">Welcome to the Capybara Lovers website! Here you can find all the information you need about capybaras, the world's largest rodent. Capybaras are native to South America and are known for their friendly and social nature. They are often found near water and are excellent swimmers. Capybaras are herbivores and eat a diet of grasses and aquatic plants. They are also known to be very vocal animals, making a variety of sounds to communicate with each other. If you love capybaras as much as we do, you've come to the right place!</p>
+                    </div>
+                </div>
+                <div id="gallery-container" class="gallery-container bg-dark">
+                    <div class="row bg-dark gallery-row">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallery-item">
+                            <div class="rounded-5 overflow-hidden p-3 bg-darker shadow m-2 d-flex flex-column align-items-center">
+                                <img src="https://i.ytimg.com/vi/4pFh4xs-vKs/maxresdefault.jpg" class="img-fluid rounded-4" alt="Capybara 1">
+                                <p class="text-center mt-2">Capybara Enjoing a Swim</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallery-item">
+                            <div class="rounded-5 overflow-hidden p-3 bg-darker shadow m-2 d-flex flex-column align-items-center">
+                                <img src="src/images/capy1.jpg" class="img-fluid rounded-4" alt="Capybara 2">
+                                <p class="text-center mt-2">Capybara Family</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallery-item">
+                            <div class="rounded-5 overflow-hidden p-3 bg-darker shadow m-2 d-flex flex-column align-items-center">
+                                <img src="https://www.savacations.com/wp-content/uploads/2021/02/Blog-Capybara-Pantanal-Brazil3.jpg" class="img-fluid rounded-4" alt="Capybara 2">
+                                <p class="text-center mt-2">Chill Capybara</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallery-item">
+                            <div class="rounded-5 overflow-hidden p-3 bg-darker shadow m-2 d-flex flex-column align-items-center">
+                                <img src="https://www.vitares.org/images/vitares/magazine/capybaras1.jpg" class="img-fluid rounded-4" alt="Capybara 2">
+                                <p class="text-center mt-2">Capybara Parent</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row bg-dark">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallery-item">
+                            <div class="rounded-5 overflow-hidden p-3 bg-darker shadow m-2 d-flex flex-column align-items-center">
+                                <img src="https://transcode-v2.app.engoo.com/image/fetch/f_auto,c_limit,h_384,dpr_3/https://assets.app.engoo.com/organizations/5d2656f1-9162-461d-88c7-b2505623d8cb/images/7a0pPLaAA7XRv3eM2EW8tg.png" class="img-fluid rounded-4" alt="Capybara 2">
+                                <p class="text-center mt-2">Capybara Jump</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallery-item">
+                            <div class="rounded-5 overflow-hidden p-3 bg-darker shadow m-2 d-flex flex-column align-items-center">
+                                <img src="https://i.ytimg.com/vi/bQ2BvpYlv1U/maxresdefault.jpg" class="img-fluid rounded-4" alt="Capybara 2">
+                                <p class="text-center mt-2">Capybara Taking a Ride</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallery-item">
+                            <div class="rounded-5 overflow-hidden p-3 bg-darker shadow m-2 d-flex flex-column align-items-center">
+                                <img src="https://i.ytimg.com/vi/Uik3f8l2H_4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDWtMcELFCf3xffG7H6d_JX8o9nAQ" class="img-fluid rounded-4" alt="Capybara 2">
+                                <p class="text-center mt-2">Capybara Eating</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallery-item">
+                            <div class="rounded-5 overflow-hidden p-3 bg-darker shadow m-2 d-flex flex-column align-items-center">
+                                <img src="https://www.zooborns.com/.a/6a010535647bf3970b02a2eed64dd3200d-800wi" class="img-fluid rounded-4" alt="Capybara 2">
+                                <p class="text-center mt-2">Capybara Feeding Hers Children</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row bg-dark">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallery-item">
+                            <div class="rounded-5 overflow-hidden p-3 bg-darker shadow m-2 d-flex flex-column align-items-center">
+                                <img src="https://res.cloudinary.com/jnto/image/upload/w_800,h_534,c_fill,f_auto,fl_lossy,q_60/v1/media/filer_public/78/a1/78a14b62-dfe2-45fb-9aa1-2de0de511d6a/capybara-sleeping_faahat" class="img-fluid rounded-4" alt="Capybara 2">
+                                <p class="text-center mt-2">Capybara Sleeping</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallery-item">
+                            <div class="rounded-5 overflow-hidden p-3 bg-darker shadow m-2 d-flex flex-column align-items-center">
+                                <img src="https://cdn.theatlantic.com/thumbor/ZAWCcyd-MwxmwvkTGp9VtFjb-h0=/900x673/media/img/photo/2018/11/photos-companionable-capybaras/c02_142762210/original.jpg" class="img-fluid rounded-4" alt="Capybara 2">
+                                <p class="text-center mt-2">Capybara Giving a Ride For a Monkey</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallery-item">
+                            <div class="rounded-5 overflow-hidden p-3 bg-darker shadow m-2 d-flex flex-column align-items-center">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIREKIEcBm0uFc695GJQ26stv_T5GD7XLFqg&s" class="img-fluid rounded-4" alt="Capybara 2">
+                                <p class="text-center mt-2">Capybara Playing</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 gallery-item">
+                            <div class="rounded-5 overflow-hidden p-3 bg-darker shadow m-2 d-flex flex-column align-items-center">
+                                <img src="https://media.istockphoto.com/id/638290450/photo/young-capybara-playing.jpg?s=612x612&w=0&k=20&c=ai1DYGcXNFgouFzISYiLzcjuyEccsYB43vf32qlLfXw=" class="img-fluid rounded-4" alt="Capybara 2">
+                                <p class="text-center mt-2">Capybara Kissing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center bg-dark mt-1">
+                    <button id="expand-btn" class="btn btn-primary">Show More</button>
+                </div>
+                <div class="row bg-dark p-3">
+                    <div class="col-12">
+                        <form>
+                            <div class="mb-3 flex-column">
+                                <label for="userMessage" class="form-label">Write to us!</label><br>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-8">
+                                        <textarea class="form-control custom-textarea" id="userMessage" rows="10"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light p-2">
+                <div class="container-fluid full-width justify-content-center">
+                    <div class="d-flex align-items-center">
+                        <h3 class="text-center">Site By Vertuzek</h3>
+                    </div>
+                </div>
+            </nav>
+        </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const galleryContainer = document.getElementById('gallery-container');
+                const expandBtn = document.getElementById('expand-btn');
+            
+                expandBtn.addEventListener('click', function() {
+                    galleryContainer.classList.toggle('expanded');
+                    if (galleryContainer.classList.contains('expanded')) {
+                        expandBtn.textContent = 'Show Less';
+                    } else {
+                        expandBtn.textContent = 'Show More';
+                        galleryContainer.scrollIntoView({behavior: 'smooth'});
+                    }
+                });
+            });
+        </script>
+        <script src="src/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
